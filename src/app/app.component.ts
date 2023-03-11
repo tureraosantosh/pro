@@ -9,8 +9,7 @@ import { UserService } from './services/user.service';
 export class AppComponent {
   title = 'pro';
 
-  constructor(private user:UserService)
+  constructor()
   {
-    user.getCountries().subscribe(res=>console.log(res))
   }
 }
